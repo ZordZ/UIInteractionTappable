@@ -15,12 +15,11 @@
 		74726E012C0EA46100865903 /* UISubscribableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74726E002C0EA46100865903 /* UISubscribableDemoTests.swift */; };
 		74726E0B2C0EA46100865903 /* UISubscribableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74726E0A2C0EA46100865903 /* UISubscribableDemoUITests.swift */; };
 		74726E0D2C0EA46100865903 /* UISubscribableDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74726E0C2C0EA46100865903 /* UISubscribableDemoUITestsLaunchTests.swift */; };
-		74726E1B2C0EA4C600865903 /* UISubscribable in Resources */ = {isa = PBXBuildFile; fileRef = 74726E1A2C0EA4C600865903 /* UISubscribable */; };
-		74726E1E2C0EA4D200865903 /* UISubscribable in Frameworks */ = {isa = PBXBuildFile; productRef = 74726E1D2C0EA4D200865903 /* UISubscribable */; };
 		74726E242C0EA79600865903 /* DemoInteractionsControllerConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74726E232C0EA79600865903 /* DemoInteractionsControllerConfigurable.swift */; };
 		74726E262C0EA7AA00865903 /* DemoInteractionsNavBarConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74726E252C0EA7AA00865903 /* DemoInteractionsNavBarConfigurable.swift */; };
 		74726E282C0EA7BF00865903 /* DemoInteractionsLabelConfigrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74726E272C0EA7BF00865903 /* DemoInteractionsLabelConfigrable.swift */; };
 		74726E2A2C0EA84F00865903 /* DemoInteractionsSubscribable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74726E292C0EA84F00865903 /* DemoInteractionsSubscribable.swift */; };
+		74B03EB12C0EB7580018D010 /* UISubscribable in Frameworks */ = {isa = PBXBuildFile; productRef = 74B03EB02C0EB7580018D010 /* UISubscribable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,6 @@
 		74726E062C0EA46100865903 /* UISubscribableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UISubscribableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74726E0A2C0EA46100865903 /* UISubscribableDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISubscribableDemoUITests.swift; sourceTree = "<group>"; };
 		74726E0C2C0EA46100865903 /* UISubscribableDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISubscribableDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		74726E1A2C0EA4C600865903 /* UISubscribable */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UISubscribable; path = ../..; sourceTree = "<group>"; };
 		74726E232C0EA79600865903 /* DemoInteractionsControllerConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoInteractionsControllerConfigurable.swift; sourceTree = "<group>"; };
 		74726E252C0EA7AA00865903 /* DemoInteractionsNavBarConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoInteractionsNavBarConfigurable.swift; sourceTree = "<group>"; };
 		74726E272C0EA7BF00865903 /* DemoInteractionsLabelConfigrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoInteractionsLabelConfigrable.swift; sourceTree = "<group>"; };
@@ -65,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74726E1E2C0EA4D200865903 /* UISubscribable in Frameworks */,
+				74B03EB12C0EB7580018D010 /* UISubscribable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +87,6 @@
 		74726DDD2C0EA46000865903 = {
 			isa = PBXGroup;
 			children = (
-				74726E192C0EA49F00865903 /* Packages */,
 				74726DE82C0EA46000865903 /* UISubscribableDemo */,
 				74726DFF2C0EA46100865903 /* UISubscribableDemoTests */,
 				74726E092C0EA46100865903 /* UISubscribableDemoUITests */,
@@ -139,14 +136,6 @@
 			path = UISubscribableDemoUITests;
 			sourceTree = "<group>";
 		};
-		74726E192C0EA49F00865903 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				74726E1A2C0EA4C600865903 /* UISubscribable */,
-			);
-			path = Packages;
-			sourceTree = "<group>";
-		};
 		74726E1C2C0EA4D200865903 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +171,7 @@
 			);
 			name = UISubscribableDemo;
 			packageProductDependencies = (
-				74726E1D2C0EA4D200865903 /* UISubscribable */,
+				74B03EB02C0EB7580018D010 /* UISubscribable */,
 			);
 			productName = UISubscribableDemo;
 			productReference = 74726DE62C0EA46000865903 /* UISubscribableDemo.app */;
@@ -256,6 +245,9 @@
 				Base,
 			);
 			mainGroup = 74726DDD2C0EA46000865903;
+			packageReferences = (
+				74B03EAF2C0EB7580018D010 /* XCRemoteSwiftPackageReference "UISubscribable" */,
+			);
 			productRefGroup = 74726DE72C0EA46000865903 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,7 +265,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				74726DF32C0EA46100865903 /* Assets.xcassets in Resources */,
-				74726E1B2C0EA4C600865903 /* UISubscribable in Resources */,
 				74726DF62C0EA46100865903 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -637,9 +628,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		74B03EAF2C0EB7580018D010 /* XCRemoteSwiftPackageReference "UISubscribable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZordZ/UISubscribable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		74726E1D2C0EA4D200865903 /* UISubscribable */ = {
+		74B03EB02C0EB7580018D010 /* UISubscribable */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 74B03EAF2C0EB7580018D010 /* XCRemoteSwiftPackageReference "UISubscribable" */;
 			productName = UISubscribable;
 		};
 /* End XCSwiftPackageProductDependency section */
